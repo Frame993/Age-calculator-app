@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <title>Age calculator app</title>
+</head>
+
+<body>
+
+  <section class="enterdate">
+    <form action="get">
+      <label for="day">
+        <span>Day</span>
+        <input type="number" id="day" placeholder="DD" required>
+      </label>
+      <label for="month">
+        <span>Month</span>
+        <input type="number" id="month" placeholder="MM" required>
+      </label>
+      <label for="year">
+        <span>Year</span>
+        <input type="number" id="year" placeholder="YYYY" required>
+      </label>
+    </form>
+
+    <figure>
+      <hr>
+      <button><img src="./assets/images/icon-arrow.svg" alt="arrow"></button>
+    </figure>
+
+    <article>
+      <p id="output-years"><span>--</span>years</p>
+      <p id="output-months"><span>--</span>months</p>
+      <p id="output-days"><span>--</span>days</p>
+    </article>
+
+  </section>
+
+  <!-- 
+  Day
+  DD
+
+  Month
+  MM
+
+  Year
+  YYYY
+
+  -- years
+  -- months
+  -- days -->
+
+  <script src="script.js"></script>
+</body>
+
+</html>
