@@ -74,6 +74,16 @@ input::-webkit-inner-spin-button {
     margin: 0;
 }
 
+form * p {
+    color: red;
+    font-size: 0.8rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;    
+    margin-bottom: 1rem;
+    font-style: italic;
+    display: none;
+}
+
 /* forms */
 /* ******************************************************* */
 /* Image  */

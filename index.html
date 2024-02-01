@@ -8,7 +8,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,300;1,400;1,800&display=swap"
     rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
@@ -18,49 +18,38 @@
 <body>
 
   <section class="enterdate">
-    <form action="get">
+    <form action="" method="get" form="date">
       <label for="day">
-        <span>Day</span>
+        <span id="dayLabel">Day</span>
         <input type="number" id="day" placeholder="DD" required>
+        <p id="dayError">Must be a valid day</p>
       </label>
       <label for="month">
-        <span>Month</span>
+        <span id="monthLabel">Month</span>
         <input type="number" id="month" placeholder="MM" required>
+        <p id="monthError">Must be a valid month</p>
       </label>
       <label for="year">
-        <span>Year</span>
+        <span id="yearLabel">Year</span>
         <input type="number" id="year" placeholder="YYYY" required>
+        <p id="yearError">Must be in the past</p>
       </label>
     </form>
-
     <figure>
       <hr>
-      <button><img src="./assets/images/icon-arrow.svg" alt="arrow"></button>
+      <button id="btn" type="submit" form="date"><img src="./assets/images/icon-arrow.svg" alt="arrow"></button>
     </figure>
 
+
     <article>
-      <p id="output-years"><span>--</span>years</p>
-      <p id="output-months"><span>--</span>months</p>
-      <p id="output-days"><span>--</span>days</p>
+      <p><span id="outputYears">--</span>years</p>
+      <p><span id="outputMonths">--</span>months</p>
+      <p ><span id="outputDays">--</span>days</p>
     </article>
 
   </section>
 
-  <!-- 
-  Day
-  DD
-
-  Month
-  MM
-
-  Year
-  YYYY
-
-  -- years
-  -- months
-  -- days -->
-
-  <script src="script.js"></script>
+  <script src="./script.js"></script>
 </body>
 
 </html>
